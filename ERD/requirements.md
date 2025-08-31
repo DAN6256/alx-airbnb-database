@@ -1,6 +1,6 @@
 ## Used dbdiagram.io for ERD
 # See code below
-
+'
 Table User {
   user_id UUID [pk, note: 'Primary Key, Indexed']
   first_name VARCHAR [not null]
@@ -70,7 +70,7 @@ Table Message {
   recipient_id UUID [ref: > User.user_id, not null]
   message_body TEXT [not null]
   sent_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
-}
+}'
 
 # // Relationship Notes:
 # // User (1) -> (Many) Property: A user can host multiple properties
