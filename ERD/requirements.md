@@ -1,6 +1,6 @@
 ## Used dbdiagram.io for ERD
 # See code below
-'''
+'''dbml
 Table User {
   user_id UUID [pk, note: 'Primary Key, Indexed']
   first_name VARCHAR [not null]
