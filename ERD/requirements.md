@@ -72,15 +72,15 @@ Table Message {
   sent_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
 }'''
 
-# // Relationship Notes:
-# // User (1) -> (Many) Property: A user can host multiple properties
-# // User (1) -> (Many) Booking: A user can make multiple bookings
-# // Property (1) -> (Many) Booking: A property can have multiple bookings
-# // Booking (1) -> (1) Payment: Each booking has one payment
-# // User (1) -> (Many) Review: A user can write multiple reviews
-# // Property (1) -> (Many) Review: A property can receive multiple reviews
-# // User (1) -> (Many) Message (as sender): A user can send multiple messages
-# // User (1) -> (Many) Message (as recipient): A user can receive multiple messages
+## // Relationship Notes:
+## // User (1) -> (Many) Property: A user can host multiple properties
+## // User (1) -> (Many) Booking: A user can make multiple bookings
+## // Property (1) -> (Many) Booking: A property can have multiple bookings
+## // Booking (1) -> (1) Payment: Each booking has one payment
+## // User (1) -> (Many) Review: A user can write multiple reviews
+## // Property (1) -> (Many) Review: A property can receive multiple reviews
+## // User (1) -> (Many) Message (as sender): A user can send multiple messages
+## // User (1) -> (Many) Message (as recipient): A user can receive multiple messages
 
 ![alt text](<ERD.png>)
 
