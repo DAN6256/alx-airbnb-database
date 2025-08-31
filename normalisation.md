@@ -256,6 +256,9 @@ Table Payment {
 
 ## New ERD
 ![alt text](ERD_normalised.png)
+
+## Link to interactive ERD
+https://dbdiagram.io/d/ERD_normalised-68b41fa4777b52b76c585fd6
 ## Conclusion
 
 The normalized 3NF design eliminates redundancy while maintaining all functional requirements of the original schema. The separation of location data and conversion of enums to reference tables provides a more flexible, maintainable, and scalable database structure that will better support the growth and evolution of the AirBnB platform.

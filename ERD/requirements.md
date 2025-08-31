@@ -1,6 +1,10 @@
+# AirBnB Database Entity-Relationship Diagram
+
 ## Used dbdiagram.io for ERD
-# See code below
-'''dbml
+
+### Database Schema Code
+
+```dbml
 Table User {
   user_id UUID [pk, note: 'Primary Key, Indexed']
   first_name VARCHAR [not null]
@@ -70,19 +74,27 @@ Table Message {
   recipient_id UUID [ref: > User.user_id, not null]
   message_body TEXT [not null]
   sent_at TIMESTAMP [default: `CURRENT_TIMESTAMP`]
-}'''
+}
+```
 
-## // Relationship Notes:
-## // User (1) -> (Many) Property: A user can host multiple properties
-## // User (1) -> (Many) Booking: A user can make multiple bookings
-## // Property (1) -> (Many) Booking: A property can have multiple bookings
-## // Booking (1) -> (1) Payment: Each booking has one payment
-## // User (1) -> (Many) Review: A user can write multiple reviews
-## // Property (1) -> (Many) Review: A property can receive multiple reviews
-## // User (1) -> (Many) Message (as sender): A user can send multiple messages
-## // User (1) -> (Many) Message (as recipient): A user can receive multiple messages
+## Relationship Notes
 
-![alt text](<ERD.png>)
+### Entity Relationships
+- **User (1) → (Many) Property**: A user can host multiple properties
+- **User (1) → (Many) Booking**: A user can make multiple bookings
+- **Property (1) → (Many) Booking**: A property can have multiple bookings
+- **Booking (1) → (1) Payment**: Each booking has one payment
+- **User (1) → (Many) Review**: A user can write multiple reviews
+- **Property (1) → (Many) Review**: A property can receive multiple reviews
+- **User (1) → (Many) Message (as sender)**: A user can send multiple messages
+- **User (1) → (Many) Message (as recipient)**: A user can receive multiple messages
 
-## Link to the interactiver version of the diagram
-https://dbdiagram.io/d/ERD-68b41fa4777b52b76c585fd6
+## ERD Visualization
+
+![AirBnB ERD](ERD.png)
+
+## Interactive Diagram
+
+**Link to the interactive version of the diagram:**  
+[https://dbdiagram.io/d/ERD-68b41fa4777b52b76c585fd6](https://dbdiagram.io/d/ERD-68b41fa4777b52b76c585fd6)
+
